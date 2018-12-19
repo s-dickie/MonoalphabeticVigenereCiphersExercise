@@ -5,8 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MonoalphabeticVigenereCiphersExercise"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Encryption/ decryption GUI" Height="450" Width="800">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="67*"/>
+            <ColumnDefinition Width="190*"/>
+            <ColumnDefinition Width="535*"/>
+        </Grid.ColumnDefinitions>
+        <Button Content="Process Mono Cipher" Grid.Column="1" HorizontalAlignment="Left" Margin="30,318,0,0" VerticalAlignment="Top" Width="248" Height="73" Grid.ColumnSpan="2"/>
+        <Button Content="Process Vigenere Cipher" Grid.Column="2" HorizontalAlignment="Left" Margin="187,318,0,0" VerticalAlignment="Top" Width="247" Height="73"/>
+        <Label Content="Keyword: " Grid.Column="1" HorizontalAlignment="Left" Margin="17,89,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Height="59" Width="196"/>
+        <Label Content="Message file: " Grid.Column="1" HorizontalAlignment="Left" Margin="17,181,0,0" VerticalAlignment="Top" Height="57" Width="199" Grid.ColumnSpan="2"/>
+        <TextBox Grid.Column="2" HorizontalAlignment="Left" Height="61" Margin="30,89,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="340"/>
+        <TextBox Grid.Column="2" HorizontalAlignment="Left" Height="61" Margin="31,167,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="340"/>
+
     </Grid>
 </Window>
